@@ -1,0 +1,68 @@
+{% extends 'core/base.html' %}
+
+{% block title %}Mis metas y aspiraciones{% endblock %}
+
+{% block background %}{% load static %}{% static 'core/img/imagenFondo.png' %}{% endblock %}
+
+{% block headers %}
+<h1>Mis metas y Aspiraciones</h1> <!-- Define el encabezado principal de la página -->
+{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-lg-6 col-md-6 mx-auto">
+        <!-- Aquí va la imagen -->
+        <img src="{% static 'core/img/metas.jpg' %}" class="img-fluid" alt="Tu imagen">
+    </div>
+    <div class="col-lg-6 col-md-6 mx-auto">
+        <!-- Aquí va la descripción -->
+        <h2>Metas y aspiraciones</h2>
+        <p>Maestría en Tecnologías Full-Stack: Mi objetivo principal es especializarme tanto en el desarrollo front-end
+            como en el back-end. Planeo adquirir habilidades avanzadas en tecnologías como React, Angular y Node.js para
+            poder liderar proyectos full-stack de manera integral.
+        <p>Desarrollo Profesional y Colaboración: Busco oportunidades que fomenten mi crecimiento profesional, donde
+            pueda colaborar con mentores y compañeros apasionados. La colaboración es clave para aprender y evolucionar,
+            y aspiro a trabajar en entornos que fomenten el intercambio de ideas y el desarrollo colectivo.
+        </p>
+    </div>
+</div>
+
+{% block carousel %}<!-- Define el carrusel de imágenes -->
+<div class="row mt-5">
+    <div class="col-lg-10 col-md-6 mx-auto">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="{% static 'core/img/equipo.jpg' %}" class="d-block w-100" alt="Imagen 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="{% static 'core/img/equipo2.jpg' %}" class="d-block w-100" alt="Imagen 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="{% static 'core/img/equipo3.jpg' %}" class="d-block w-100" alt="Imagen 3">
+                </div>
+                <div class="carousel-item">
+                    <img src="{% static 'core/img/equipo4.jpg' %}" class="d-block w-100" alt="Imagen 3">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row mt-2">
+    <div class="col-lg-10 col-md-6 mx-auto">
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev" style="font-size: 1rem;">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next" style="font-size: 1rem;">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+        </button>
+    </div>
+</div>
+{% endblock %}
+
+
+
+
+{% endblock %}

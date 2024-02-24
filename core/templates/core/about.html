@@ -1,0 +1,29 @@
+{% extends 'core/base.html' %}
+
+{% block title %}Acerca de{% endblock %}
+
+{% block background %}{% load static %}{% static 'core/img/about.png' %}{% endblock %}
+        <!-- Define la imagen de fondo de la página -->
+
+{% block headers %}
+<h1>Acerca de</h1><!-- Define el encabezado principal de la página -->
+{% endblock %}
+
+{% block content %}
+<div class="row"> 
+    <div class="col-lg-3 col-md-2 offset-lg-1">
+        <img class="img-fluid avatar" src="{% static 'core/img/portada.jpg' %}" alt="">
+
+    </div>
+    <div class="col-lg-7 col-md-8">
+        <h2 class="section-heading">Johan Sinoe De Jesus Torres</h2>   
+        <p>Soy un estudiante de desarrollo de software que le apasiona programar, he realizado páginas y aplicaciones web, actualmente estoy cursando la ingeniería, he trabajado desarrollando aplicaciones como tienda online, agenda de viajes, plataforma educativa para alojar cursos y que los usuarios puedan acceder a ellos, he trabajado con java Script, Ionic, Angular, React, Vite, tengo conocimientos en css y html5, github, también conocimiento básico sobre el manejo de base de datos, pero me he enfocado más por la parte del fron-end, aunque planeo especializarme tanto en el fron-end como el back-end</p>
+    </div>
+</div>
+{% endblock %}
+<!-- Define el contenido principal de la página, que incluye información sobre el autor del sitio y su experiencia en desarrollo de software -->
+
+
+
+
+

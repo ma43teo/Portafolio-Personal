@@ -1,0 +1,41 @@
+{% extends 'core/base.html' %}
+
+{% block title %}Portada{% endblock %}
+
+{% block background %}{% load static %}{% static 'core/img/imagenFondo.png' %}{% endblock %}
+
+{% block headers %}
+<h1>Portafolio Johan Sinoe De Jesús Torres</h1>
+{% endblock %}
+
+{% block content %}
+<!-- Galería de imágenes -->
+<div class="container">
+  <div class="row">
+    <div class="col-lg-12 text-center">
+      <h2 class="section-heading text-uppercase">Cursos</h2><!-- Título de la sección de la galería de imágenes -->
+      <div class="row">
+        <div class="col-md-4">
+          <img src="{% static 'core/img/1.png' %}" class="img-fluid" alt="Imagen 1">
+        </div>
+        <div class="col-md-4">
+          <img src="{% static 'core/img/2.png' %}" class="img-fluid" alt="Imagen 2">
+        </div>
+        <div class="col-md-4">
+          <img src="{% static 'core/img/3.png' %}" class="img-fluid" alt="Imagen 3">
+        </div>
+        <div class="col-md-4">
+          <img src="{% static 'core/img/4.png' %}" class="img-fluid" alt="Imagen 3">
+        </div>
+        <div class="col-md-4">
+          <img src="{% static 'core/img/5.png' %}" class="img-fluid" alt="Imagen 3">
+        </div>
+        <div class="col-md-4">
+          <img src="{% static 'core/img/6.png' %}" class="img-fluid" alt="Imagen 3">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
+
